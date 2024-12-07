@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Website</title>
+    <link rel="stylesheet" href="center.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .hero {
+            background: url('landing.jpeg') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            height: 500px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        #navbar {
+            background-color: #f8f9fa;
+
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin: 20px 0;
+        }
+
+        .btn-light {
+            background-color: #ff5722;
+            color: #fff;
+        }
+
+        .button {
+            color: white;
+            transition: color 0.3s;
+        }
+
+        .card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            border-radius: 10px 10px 0 0;
+        }
+
+        .HYY {
+            font-family: 'Georgia', serif;
+            font-size: 2.8rem;
+            color: #fff;
+            margin-bottom: 40px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+
+        }
+
+        .card-title {
+            font-size: 1.8rem;
+            color: #0056b3;
+            ;
+            margin-bottom: 15px;
+            font-family: 'Verdana', sans-serif;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            transition: color 0.3s;
+        }
+
+        .containe {
+            background-color: #f0f0f0;
+            background-size: cover;
+            height: auto;
+        }
+
+        .card-text {
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 1rem;
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .card-text:hover {
+            transform: scale(1.02);
+        }
+
+        /* Background for the Testimonial Section */
+        #testimonal {
+            background: linear-gradient(to right, #f0f0f5, #e8eaf6);
+            padding: 60px 0;
+            position: relative;
+        }
+
+        #testimonal::before {
+            content: "";
+            background: url('path-to-pattern-image.png') repeat;
+            /* Replace with actual path */
+            opacity: 0.1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+
+        .testimonal-heading {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 40px;
+        }
+
+        .testimonal-heading span {
+            font-size: 1.8rem;
+            color: #ff5722;
+            font-weight: bold;
+        }
+
+        .testimonal-heading h1 {
+            font-size: 3.2rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .testimonal-box-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonal-box {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 6px 20px lrgba(0, 0, 0, 0.15);
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonal-box:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonal-box::before {
+            content: "❝";
+            font-size: 4rem;
+            color: rgba(255, 87, 34, 0.1);
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: -1;
+        }
+
+        .testimonal-box::after {
+            content: "❞";
+            font-size: 4rem;
+            color: rgba(255, 87, 34, 0.1);
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            z-index: -1;
+        }
+
+        .profile-img img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            border: 3px solid #ff5722;
+            margin-bottom: 15px;
+        }
+
+        .name-user strong {
+            font-size: 1.4rem;
+            color: #333;
+            font-weight: 700;
+        }
+
+        .name-user span {
+            font-size: 0.9rem;
+            color: #888;
+        }
+
+        .reviews {
+            font-size: 1.3rem;
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .client-comment h2 {
+            font-size: 1.3rem;
+            color: #0056b3;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .client-comment p {
+            font-size: 1rem;
+            color: #555;
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .spn {
+            color: #0056b3;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+            height: 360px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #0056b3;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+    </nav>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <!-- Navbar content -->
+    </nav>
+
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <img src="C:\Users\Kashish\OneDrive\Desktop\zip folder\th.jpeg" alt="Logo" width="90" height="50"
+                margin-right="90px" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">
+                <H1>Travel-X</H1>
+            </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="travel.html"><B>Home</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html"><B>Destinations</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html"><B>Blog</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><B>Contact</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="choose.html"><B>Choose Us</B></a>
+                    </li>
+
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero ">
+        <div class="container text-center text-white">
+            <h1>Explore the World</h1>
+            <p>Your adventure starts here!</p>
+            <a href="destination.html" class="btn btn-light btn-lg">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Body Content -->
+
+    <div class="container my-5">
+        <div class="container">
+            <h2 class="HYY"><B>Popular Destinations</B></h2>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="TtravelImage/OIP (1).jpeg" class="card-img-top" alt="Destination 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali, Indonesia</h5>
+                            <p class="card-text">
+                            <h5><i>the beautiful beaches and also the culture of Bali.</i></h5>
+                            </p>
+                            <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="TtravelImage/R.jpeg" class="card-img-top" alt="Destination 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris, France</h5>
+                            <p class="card-text">
+                            <h5><i>Discover the romance and history of culture of Lights.</i></h5>
+                            </p>
+                            <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="TtravelImage/ITALY.jpeg" class="card-img-top" alt="Destination 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo, Japan</h5>
+                            <p class="card-text">
+                            <h5></i>Immerse yourself in the vibrant culture of the  Tokyo.</i></h5>
+                            </p>
+                            <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container my-5">
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="TtravelImage/BALI.jpeg" class="card-img-top" alt="Destination 1" height="280px">
+                    <div class="card-body">
+                        <h5 class="card-title">Bali, Indonesia</h5>
+                        <p class="card-text">
+                        <h5><i>the beautiful beaches and also the culture of Bali.</i></h5>
+                        </p>
+                        <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="TtravelImage/PA.webp" class="card-img-top" alt="Destination 2 " height="280px">
+                    <div class="card-body">
+                        <h5 class="card-title">Paris, France</h5>
+                        <p class="card-text">
+                        <h5><i>Discover the romance and history of culture of Lights.</i></h5>
+                        </p>
+                        <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="TtravelImage/OIP (1).jpeg" class="card-img-top" alt="Destination 3 " height="280px">
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo, Japan</h5>
+                        <p class="card-text">
+                        <h5></i>Immerse yourself in the vibrant culture of Tokyo.</i></h5>
+                        </p>
+                        <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </p>
+    </div>
+
+    </div>
+    </div>
+    </div>
+    </section>
+
+
+    <!-- Customer Comments Section -->
+    <section id="testimonal">
+        <div class="testimonal-heading">
+            <h1>
+                <bold class="spn">Comments</bold>
+            </h1>
+            <h1>
+                <bold>Our Customers</bold>
+            </h1>
+        </div>
+        <div class="testimonal-box-container">
+            <!-- Box 1 -->
+            <div class="testimonal-box">
+                <div class="profile-img">
+                    <img src="TtravelImage/exsys.jpeg" alt="img">
+                </div>
+                <div class="name-user">
+                    <strong>Shreyash Mehta</strong><br>
+                    <span>mehtaKalyani@71gmail.com</span>
+                </div>
+                <div class="reviews">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <div class="client-comment">
+                    <h2>Great Service!</h2>
+                    <p>Had an amazing experience with this travel agency. Everything was planned perfectly!</p>
+                </div>
+            </div>
+            <!-- Box 1 -->
+            <div class="testimonal-box">
+                <div class="profile-img">
+                    <img src="TtravelImage/exsys.jpeg" alt="img">
+                </div>
+                <div class="name-user">
+                    <strong>Kalyan Mehta</strong><br>
+                    <span>mehtaKalyani@71gmail.com</span>
+                </div>
+                <div class="reviews">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <div class="client-comment">
+                    <h2>Great Service!</h2>
+                    <p>Had an amazing experience with this travel agency. Everything was planned perfectly!</p>
+                </div>
+            </div>
+            <!-- Box 1 -->
+            <div class="testimonal-box">
+                <div class="profile-img">
+                    <img src="TtravelImage/exsys.jpeg" alt="img">
+                </div>
+                <div class="name-user">
+                    <strong>Amika Mishra</strong><br>
+                    <span>kayamishra@71gmail.com</span>
+                </div>
+                <div class="reviews">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <div class="client-comment">
+                    <h2>Great Service!</h2>
+                    <p>Had an amazing experience with this travel agency. Everything was planned perfectly!</p>
+                </div>
+            </div>
+            <!-- Box 1 -->
+            <div class="testimonal-box">
+                <div class="profile-img">
+                    <img src="TtravelImage/exsys.jpeg" alt="img">
+                </div>
+                <div class="name-user">
+                    <strong>Prakash Rai</strong><br>
+                    <span>prakashrai@71gmail.com</span>
+                </div>
+                <div class="reviews">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <div class="client-comment">
+                    <h2>Great Service!</h2>
+                    <p>Had an amazing experience with this travel agency. Everything was planned perfectly!</p>
+                </div>
+            </div>
+            <!-- Box 2, 3, etc. with similar structure -->
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white pt-5 pb-3 top">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">About Us</h5>
+                    <hr>
+                    <p>We are a leading travel agency providing unique travel experiences around the globe.<br> Join us
+                        for unforgettable adventures!</p>
+                </div>
+                <!-- Quick Links Section -->
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Quick Links</h5>
+                    <hr>
+                    <ul class="list-unstyled">
+                        <h5>
+                            <li><a href="travel.html" class="text-white">Home</a></li>
+                            <li><a href="destination.html" class="text-white">Destinations</a></li>
+                            <li><a href="blog.html" class="text-white">Blog</a></li>
+                            <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                        </h5>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="text-uppercase">Contact Us
+                        <hr>
+                        <p><i class="bi bi-telephone"></i> + 976358237</p>
+                        <p><i class="bi bi-envelope"></i> abroad@travelagency.com</p>
+                        <p><i class="bi bi-geo-alt"></i> Mangalwari Complax,Sadar</p>
+                    </h5>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <h5 class="text-uppercase">Subscribe to our Newsletter</h5>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+                        <button class="btn btn-primary" type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="col-md-6 text-end">
+                    <h5 class="text-uppercase">Follow Us</h5>
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    </body>
+
+</html>

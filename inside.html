@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Package - Travel-X</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section with background image */
+
+        /* Hero Section with background image */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+                url('./TtravelImage/BALI.jpeg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: fadeIn 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .hero .btn {
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            background-color: #ff7f50;
+            color: white;
+            border-radius: 30px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hero .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 15px rgba(255, 127, 80, 0.4);
+        }
+
+        /* Animation for headings */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+        /* Destination Section */
+        .destination-section {
+            padding: 80px 0;
+            background-color: #f0f8ff;
+        }
+
+        .destination-section h2 {
+            font-size: 2.5rem;
+            color: #0056b3;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: bold;
+            animation: fadeIn 1s ease-out;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .destination-card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .destination-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .destination-card-body {
+            padding: 20px;
+        }
+
+        .destination-card-body h5 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .destination-card-body p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .card-text {
+            color: #333;
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 1rem;
+            font-family: 'Arial', sans-serif;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        /* Price Section */
+        .price-section {
+            background-color: #f0f8ff;
+            padding: 50px 0;
+        }
+
+        .price-section h3 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 30px;
+            font-weight: bold;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        .price-card {
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .price-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .price-card h4 {
+            font-size: 1.8rem;
+            color: BLUE;
+        }
+
+        .price-card .price {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: blue;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-dark bg-dark">
+        <!-- Navbar content -->
+    </nav>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <!-- Navbar content -->
+    </nav>
+
+    <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+        <!-- Navbar content -->
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+
+            <img src="C:\Users\Kashish\OneDrive\Desktop\zip folder\th.jpeg" alt="Logo" width="90" height="50"
+                margin-right="90px" class="d-inline-block align-text-top">
+            <a class="navbar-brand" href="#">
+                <H1>Travel-X</H1>
+            </a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="travel.html"><B>Home</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destination.html"><B>Destinations</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html"><B>Blog</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html"><B>Contact</B></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="choose.html"><B>Choose Us</B></a>
+                    </li>
+
+
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Discover Bali</h1>
+        <p>Your Dream Holiday Awaits</p>
+        <a href="#destinations"></a>
+    </section>
+
+    <!-- Bali Destinations -->
+    <section class="destination-section">
+       <i></i> <h2>Top Places to Visit in Bali</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="TtravelImage/bali beach.jpeg" alt="Bali Beach">
+                        <div class="destination-card-body">
+                            <h5>Uluwatu Beach</h5>
+                            <p>Famous for its cliffs and scenic views, Uluwatu Beach is perfect for relaxation and water
+                                activities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="TtravelImage/bali temple.jpeg" alt="Bali Temple">
+                        <div class="destination-card-body">
+                            <h5>Uluwatu Temple</h5>
+                            <p>A beautiful Hindu temple perched on a cliff, offering breathtaking ocean views and
+                                traditional Kecak dance performances.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="destination-card">
+                        <img src="TtravelImage/bhutn.jpeg" alt="Bali Rice Fields">
+                        <div class="destination-card-body">
+                            <h5>Tegallalang Rice Terraces</h5>
+                            <p>Explore the stunning rice terraces of Tegallalang, a UNESCO World Heritage Site known for
+                                its lush greenery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Price and Package Information -->
+    <section class="price-section">
+        <h3>Our Bali Trip Packages</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="price-card">
+                        <h4>Basic Package</h4>
+                        <p class="price">$499</p>
+                        <p><i><h5>Includes accommodation, daily breakfast, and sightseeing for 5 days.</h5></i></p>
+                        <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="price-card">
+                        <h4>Premium Package</h4>
+                        <p class="price">$799</p>
+                        <p class="card-text"><i><h5>Includes everything from the Basic Package, plus exclusive guided tours and
+                            luxury accommodations.</h5></i></p>
+                        <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="price-card">
+                        <h4>Luxury Package</h4>
+                        <p class="price">$1200</p>
+                        <p><i><h5>Enjoy a fully customized Bali trip with private transport, a personal guide, and top-tier
+                            hotels.</h5></i></p>
+                        <a href="BOOKNOW.html" class="btn btn-primary">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <footer class="bg-dark text-white pt-5 pb-3 top">
+            <div class="container">
+                <div class="row">
+                    <!-- About Section -->
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">About Us</h5>
+                        <hr>
+                        <p>We are a leading travel agency providing unique travel experiences around the globe.<br> Join
+                            us
+                            for unforgettable adventures!</p>
+                    </div>
+                    <!-- Quick Links Section -->
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Quick Links</h5>
+                        <hr>
+                        <ul class="list-unstyled">
+                            <h5>
+                                <li><a href="travel.html" class="text-white">Home</a></li>
+                                <li><a href="destination.html" class="text-white">Destinations</a></li>
+                                <li><a href="blog.html" class="text-white">Blog</a></li>
+                                <li><a href="contact.html" class="text-white">Contact Us</a></li>
+                            </h5>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-4">
+                        <h5 class="text-uppercase">Contact Us
+                            <hr>
+                            <p><i class="bi bi-telephone"></i> + 976358237</p>
+                            <p><i class="bi bi-envelope"></i> abroad@travelagency.com</p>
+                            <p><i class="bi bi-geo-alt"></i> Mangalwari Complax,Sadar</p>
+                        </h5>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <h5 class="text-uppercase">Subscribe to our Newsletter</h5>
+                        <form class="d-flex">
+                            <input type="email" class="form-control me-2" placeholder="Enter your email" required>
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                    <div class="col-md-6 text-end">
+                        <h5 class="text-uppercase">Follow Us</h5>
+                        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+</body>
+
+</body>
+
+</html>

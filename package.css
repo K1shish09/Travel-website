@@ -1,0 +1,75 @@
+ /* Comment Section Styles */
+ #testimonal {
+	background-color: #f8f9fa;
+	padding: 40px 0;
+}
+
+.testimonal-heading {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.testimonal-heading span {
+	font-size: 1.5rem;
+	color: #ff5722;
+	font-weight: bold;
+}
+
+.testimonal-heading h1 {
+	font-size: 3rem;
+	color: #333;
+}
+
+.testimonal-box-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	justify-items: center;
+}
+
+.testimonal-box {
+	background-color: #fff;
+	border-radius: 10px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 400px;
+	padding: 20px;
+	text-align: center;
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonal-box:hover {
+	transform: scale(1.05);
+	box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2);
+}
+
+.profile-img img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	border: 2px solid #ff5722;
+	margin-bottom: 15px;
+}
+
+.name-user strong {
+	font-size: 1.2rem;
+	color: #333;
+	display: block;
+}
+
+.reviews {
+	font-size: 1.5rem;
+	color: #ff5722;
+	margin-bottom: 10px;
+}
+
+.client-comment {
+	font-size: 1rem;
+	color: #555;
+}
+
+.client-comment h2 {
+	font-size: 1.4rem;
+	color: #333;
+	margin-bottom: 10px;
+}

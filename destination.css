@@ -1,0 +1,148 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: 'Arial', sans-serif;
+}
+
+
+#navbar{
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #e9ecef;
+    padding: 3rem 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.HYY{
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem; 
+    color: #fff; 
+    margin-bottom: 40px;
+	text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+    font-family: 'Georgia', serif;
+    font-size: 2.8rem; 
+    color: #fff; 
+    margin-bottom: 40px;
+	text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #555;
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #333;
+}
+
+.btn-book-now {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.btn-book-now:hover {
+    background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+footer hr {
+    border-color: #ff5722;
+    width: 50px;
+}
+
+footer p, footer ul {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+footer ul li a {
+    color: #ddd;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ff5722;
+}
+
+footer .form-control {
+    width: 75%;
+}
+
+footer .btn-primary {
+    background-color: #ff5722;
+    border-color: #ff5722;
+}
+
+footer .btn-primary:hover {
+    background-color: #e64a19;
+    border-color: #e64a19;
+}
+
+/* Social Icons */
+footer .bi {
+    font-size: 1.5rem;
+    color: #ddd;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+footer .bi:hover {
+    color: #ff5722;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
